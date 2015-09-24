@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff7f7f7f"
+    android:id="@+id/status_view_layout">
+
+    <!--<RelativeLayout android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp"-->
+        <!--android:background="#ff5d5d5d" >-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff9f9f9f"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="280dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff3d3d3d"
+        android:layout_weight="0.05"
+            android:layout_margin="5dp">
+
+
+            <ImageView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:id="@+id/imageViewStatusView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/cleane"
+            android:layout_weight="0.05" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff3d3d3d"
+            android:padding="5dp"
+            android:layout_weight="0.05"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power"
+                android:id="@+id/textViewPower"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:textIsSelectable="false"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:background="#ff3d3d3d"
+                android:textColor="@android:color/white" />
+
+            <Switch
+
+                android:id="@+id/mySwitchPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Switch"
+                android:layout_marginLeft="75dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff3d3d3d"
+            android:layout_margin="5dp"
+            android:layout_weight="0.05"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIFI"
+                android:id="@+id/textViewWifi"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="50dp"
+                android:textIsSelectable="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:background="#ff3d3d3d"
+                android:textColor="@android:color/white" />
+
+            <Switch
+
+                android:id="@+id/mySwitchWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Switch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff3d3d3d"
+
+            android:layout_weight="0.05"
+            android:padding="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charge"
+                android:id="@+id/textViewCharge"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:textIsSelectable="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:background="#ff3d3d3d"
+                android:textColor="@android:color/white" />
+
+            <Switch
+
+                android:id="@+id/mySwitchCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Switch"
+                android:layout_marginLeft="70dp" />
+        </LinearLayout>
+
+        <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/progress_one"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        app:rcMax="10"
+        app:rcProgress="5"
+        app:rcIconSize="30dp"
+        />
+
+    </LinearLayout>
+
+
+<!--</RelativeLayout>-->
+
+</RelativeLayout>

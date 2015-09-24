@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven {
+        url 'https://github.com/rosjava/rosjava_mvn_repo/raw/master'
+    }
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.akexorcist:RoundCornerProgressBar:1.2.0'
+    compile('org.ros.android_core:android_gingerbread_mr1:0.1.+') {
+        exclude group: 'junit'
+        exclude group: 'xml-apis'
+    }
+    compile('org.ros.android_core:android_honeycomb_mr2:0.1.+') {
+        exclude group: 'junit'
+        exclude group: 'xml-apis'
+    }
+    //compile 'org.ros.rosjava_core:rosjava:[0.1,0.2)'
+    compile('org.ros.rosjava_core:rosjava:[0.1,0.2)') {
+        exclude group: 'junit'
+        exclude group: 'xml-apis',
+                module: 'xml-apis'
+    }
+    compile files('libs/status_msgs/0.0.0/status_msgs-0.0.0.jar')
+    compile files('libs/test_java_msgs/0.0.0/test_java_msgs-0.0.0.jar')
+}

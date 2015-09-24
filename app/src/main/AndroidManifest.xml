@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.robo_ace.roscontrolboard" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="org.ros.android.MasterChooser" />
+
+        <service android:name="org.ros.android.NodeMainExecutorService" >
+            <intent-filter>
+                <action android:name="org.ros.android.NodeMainExecutorService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MobileROSControllerActivity"
+            android:label="@string/title_activity_mobile_roscontroller" >
+        </activity>
+        <activity
+            android:name=".ROS_PubSub"
+            android:label="@string/title_activity_ros_pubsub" >
+        </activity>
+        <activity
+            android:name=".CleanE_ControlBoard"
+            android:label="@string/title_activity_clean_e__control_board" >
+        </activity>
+        <activity
+            android:name=".WalkE_ControlBoard"
+            android:label="@string/title_activity_walk_e__control_board" >
+        </activity>
+        <activity
+            android:name=".Central_dashboard"
+            android:label="@string/title_activity_central_dashboard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TaskBuilder_Activity"
+            android:label="@string/title_activity_task_builder_" >
+        </activity>
+        <activity
+            android:name=".MapViewActivity"
+            android:label="@string/title_activity_map_view" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RosControlBoard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mobile_roscontroller">MobileROSControllerActivity</string>
+
+    <string name="title_activity_ros_pubsub">ROS pubsub</string>
+    <string name="title_activity_clean_e__control_board">CleanE_ControlBoard</string>
+    <string name="title_activity_walk_e__control_board">WalkE_ControlBoard</string>
+    <string name="title_activity_central_dashboard">Central_dashboard</string>
+    <string name="title_activity_task_builder_">TaskBuilder_Activity</string>
+    <string name="title_activity_map_view">MapViewActivity</string>
+
+    title_activity_ros_pubsub
+</resources>

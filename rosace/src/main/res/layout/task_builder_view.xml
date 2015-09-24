@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9f9f9f">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff3d3d3d">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Library"
+                    android:id="@+id/titleTaskLibrary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/abc_text_size_headline_material"
+                    android:textColor="@android:color/white"/>
+                </FrameLayout>
+                <ListView
+
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ros_first_list"
+
+                    android:dividerHeight="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ros_first_list"
+                android:layout_toEndOf="@+id/ros_first_list">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff3d3d3d">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Task To-Do"
+                        android:id="@+id/titleToDoTasks"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:textIsSelectable="false"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_headline_material"
+                        android:textColor="@android:color/white"/>
+                </FrameLayout>
+
+                <ListView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ros_second_list"
+                    android:dividerHeight="5dp"
+                    ></ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Tasks"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

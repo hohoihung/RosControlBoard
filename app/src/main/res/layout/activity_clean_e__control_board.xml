@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5d5d5d"
+    tools:context="com.example.robo_ace.roscontrolboard.CleanE_ControlBoard">
+
+    <FrameLayout
+        android:layout_width="360dip"
+        android:layout_height="738dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip"
+        android:id="@+id/frameLayout">
+        <com.example.robo_ace.rosace.StatusView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/clean_e_statView"
+            android:layout_marginTop="60dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginBottom="40dip"
+            >
+        </com.example.robo_ace.rosace.StatusView>
+
+
+    </FrameLayout>
+
+
+
+    <com.example.robo_ace.rosace.NotificationView
+        android:layout_width="500dip"
+        android:layout_height="300dip"
+        android:id="@+id/clean_e_notificationPubSub"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="60dip"></com.example.robo_ace.rosace.NotificationView>
+
+    <com.example.robo_ace.rosace.MyMapView
+        android:layout_width="500dip"
+        android:layout_height="280dip"
+        android:id="@+id/mapviewInpubsub"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="70dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip"></com.example.robo_ace.rosace.MyMapView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toLeftOf="@+id/mapviewInpubsub"
+        android:layout_marginTop="70dip"
+        android:layout_toEndOf="@+id/frameLayout">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Builder"
+            android:id="@+id/clean_e_button1"
+            android:clickable="true"
+            android:onClick="cleaneDashboardOnClick" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clean all"
+            android:id="@+id/clean_e_button2"
+            android:clickable="true"
+            android:onClick="cleaneDashboardOnClick" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Collect Items on floor"
+            android:id="@+id/clean_e_button3"
+            android:clickable="true"
+            android:onClick="cleaneDashboardOnClick" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual Drive Mode"
+            android:id="@+id/clean_e_button4"
+            android:clickable="true"
+            android:onClick="cleaneDashboardOnClick" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Map Drive Mode"
+            android:id="@+id/clean_e_button5"
+            android:clickable="true"
+            android:onClick="cleaneDashboardOnClick" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Task"
+            android:id="@+id/clean_e_button6"
+            android:clickable="true"
+            android:onClick="cleaneDashboardOnClick" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Task"
+            android:id="@+id/clean_e_button7"
+            android:clickable="true"
+            android:onClick="cleaneDashboardOnClick" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

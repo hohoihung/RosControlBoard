@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:background="#ff5d5d5d"
+    tools:context="com.example.robo_ace.roscontrolboard.Central_dashboard">
+
+    <FrameLayout
+        android:layout_width="360dip"
+        android:layout_height="738dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="20dip"
+
+        android:layout_marginBottom="20dip"
+        android:id="@+id/central_walkeframeLayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="60dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginBottom="40dip">
+            <com.example.robo_ace.rosace.StatusView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/central_walk_e_statView"
+
+            >
+            </com.example.robo_ace.rosace.StatusView>
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="300dip"
+                android:id="@+id/central_walk_e_Button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:onClick="centralDashboardOnClick"
+                android:background="@android:color/transparent" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="360dip"
+        android:layout_height="738dip"
+
+        android:layout_alignTop="@+id/central_walkeframeLayout"
+        android:layout_toRightOf="@+id/central_walkeframeLayout"
+
+
+
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip"
+        android:id="@+id/central_cleaneframeLayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="60dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginBottom="40dip">
+            <com.example.robo_ace.rosace.StatusView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/central_clean_e_statView"
+                >
+            </com.example.robo_ace.rosace.StatusView>
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="300dip"
+                android:id="@+id/central_clean_e_Button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:onClick="centralDashboardOnClick"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.example.robo_ace.rosace.NotificationView
+        android:layout_width="500dip"
+        android:layout_height="300dip"
+        android:id="@+id/central_notificationPubSub"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="60dip"></com.example.robo_ace.rosace.NotificationView>
+
+
+
+
+</RelativeLayout>

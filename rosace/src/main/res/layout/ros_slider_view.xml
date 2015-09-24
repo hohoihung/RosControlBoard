@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff5d5d5d">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Slider"
+        android:id="@+id/textViewTopRosSliderView"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textColor="@android:color/white"
+        android:background="#ff3d3d3d"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="-10"
+        android:id="@+id/textViewLeftRosSliderView"
+        android:layout_below="@+id/textViewTopRosSliderView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textColor="@android:color/white"
+        android:layout_margin="2dp" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarRos"
+        android:layout_gravity="center_horizontal"
+        android:max="1000"
+
+        android:layout_below="@+id/textViewTopRosSliderView"
+        android:layout_toRightOf="@+id/textViewLeftRosSliderView"
+        android:layout_toLeftOf="@+id/textViewRightRosSliderView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/textViewRightRosSliderView"
+        android:layout_below="@+id/textViewTopRosSliderView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textColor="@android:color/white"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textViewBottomRosSliderView"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/textViewLeftRosSliderView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Topic name"
+        android:id="@+id/textViewBottomRightRosSliderView"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/textViewLeftRosSliderView"
+
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="5dp" />
+
+
+</RelativeLayout>

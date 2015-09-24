@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff9f9f9f">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff3d3d3d">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notification Panel"
+                    android:id="@+id/titleNotificationPanel"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/abc_text_size_headline_material"
+                    android:textColor="@android:color/white"/>
+            </FrameLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This is my first Notification"
+                        android:id="@+id/NotificationPanelContent1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent5"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent6"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent7"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent8"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent9"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you feel about it ? it'nt it awesome ???"
+                        android:id="@+id/NotificationPanelContent10"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ff5d5d5d"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
